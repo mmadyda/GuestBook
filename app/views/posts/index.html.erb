@@ -1,5 +1,5 @@
 <p class="lead">
-    Witaj w naszej księdze gości
+    <%= t "index.hello"%>
     <%= link_to "Dodaj własny wpis już teraz.", new_post_path%>
 </p>
 
@@ -9,3 +9,18 @@
         <footer><cite><%= post.autor %></cite></footer>
     </blockquote>
 <% end %>
+
+<div class="row">
+    <div class="col-md-12">
+    </div>
+</div>
+
+<div class="btn-group">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+        <%= t "index.select_language", language: I18n.locale %> <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li><%= link_to "PL", set_locale_path(locale: "pl")%></li>
+        <li><%= link_to "EN", set_locale_path(locale: "en")%></li>
+    </ul>
+</div>

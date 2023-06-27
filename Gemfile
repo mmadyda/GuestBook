@@ -48,6 +48,7 @@ gem 'jquery-rails'
 
 gem 'turbolinks'
 
+gem 'rails-i18n'
 
 
 # Use Sass to process CSS

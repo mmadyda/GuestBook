@@ -29,8 +29,7 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
+pl:
   index:
-    hello: "Welcome to our guestbook"
-    select_language: "Select language (%{language})"
-
+    hello: "Witaj w naszej księdze gości"
+    select_language: "Wybierz język (%{language})"
