@@ -50,6 +50,12 @@ gem 'turbolinks'
 
 gem 'rails-i18n'
 
+gem 'solargraph'
+
+gem 'simple_form'
+
+gem 'kaminari'
+
 
 # Use Sass to process CSS
 # gem "sassc-rails"
