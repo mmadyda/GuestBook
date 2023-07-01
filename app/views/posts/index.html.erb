@@ -5,10 +5,19 @@
     <%= number_with_delimiter(1123131232.1231231231)%>
     <%= distance_of_time_in_words(rand(10_000).seconds)%>
 </pre>
+<% if user_signed_in? %>
 <p class="lead">
     <%= t "index.hello"%>
     <%= link_to "Dodaj własny wpis już teraz.", new_post_path%>
 </p>
+<% else %>
+
+<p class="lead">
+    Musisz się zalogować, aby dodać wpis.
+    <%= link_to "Zaloguj się", new_user_session_path %>
+</p>
+
+<% end %>
 
 <% @posts.each do |post|%>
     <blockquote>
