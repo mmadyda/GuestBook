@@ -20,10 +20,17 @@
 <% end %>
 
 <% @posts.each do |post|%>
+    <div class="row">
+        <div class="col-md-4">
+            <%= image_tag post.picture.url(:thumb)%>
+        </div>
+    <div class="col-md-8">
     <blockquote>
         <p><%= post.body%></p>
         <footer><cite><%= post.autor %></cite></footer>
     </blockquote>
+    </div>
+    </div>
 <% end %>
 
 <div class="row">
